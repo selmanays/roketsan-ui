@@ -253,7 +253,7 @@ export const baseColors = [
   },
   {
     name: "neutral",
-    label: "Neutral",
+    label: "Brand",
     activeColor: {
       light: "0 0% 45.1%",
       dark: "0 0% 32.2%",

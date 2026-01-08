@@ -17,7 +17,7 @@ import { CopyCodeButton } from "./theme-customizer"
 export function ThemeSelector({ className }: React.ComponentProps<"div">) {
   const { activeTheme, setActiveTheme } = useThemeConfig()
 
-  const value = activeTheme === "default" ? "neutral" : activeTheme
+  const value = activeTheme === "default" ? "brand" : activeTheme
 
   return (
     <div className={cn("flex items-center gap-2", className)}>
