@@ -1,5 +1,4 @@
 {
-  "buildCommand": "pnpm --filter=shadcn build && cd apps/v4 && pnpm build",
-  "installCommand": "pnpm install",
-  "outputDirectory": "apps/v4/.next"
+  "buildCommand": "pnpm --filter=shadcn build && pnpm --filter=v4 build",
+  "installCommand": "pnpm install"
 }
