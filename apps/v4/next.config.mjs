@@ -50,11 +50,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/figma",
-        destination: "/docs/figma",
-        permanent: true,
-      },
-      {
         source: "/sidebar",
         destination: "/docs/components/sidebar",
         permanent: true,
