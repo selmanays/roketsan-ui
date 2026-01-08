@@ -26,7 +26,7 @@ const models = [
   },
   {
     name: "v0-2.0-mini",
-    description: "Open Source model for everyone.",
+    description: "Enterprise model for internal use.",
     image:
       "https://images.unsplash.com/photo-1602146057681-08560aee8cde?q=80&w=640&auto=format&fit=crop",
     credit: "Cherry Laithang on Unsplash",
