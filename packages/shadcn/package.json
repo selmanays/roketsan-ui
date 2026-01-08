@@ -1,5 +1,5 @@
 {
-  "name": "roketsan-ui-cli",
+  "name": "shadcn",
   "version": "3.6.3",
   "description": "CLI tool for Roketsan UI component library.",
   "publishConfig": {
