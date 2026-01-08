@@ -1,8 +1,9 @@
 {
-  "name": "v4",
+  "name": "roketsan-ui",
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "description": "Roketsan UI - Enterprise component library and design system developed by OBSS for Roketsan",
   "scripts": {
     "dev": "pnpm icons:dev & next dev --turbopack --port 4000",
     "build": "pnpm --filter=shadcn build && next build",
