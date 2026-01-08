@@ -20,19 +20,16 @@ import {
 
 const people = [
   {
-    username: "shadcn",
-    avatar: "https://github.com/shadcn.png",
-    email: "user1@example.com",
+    username: "John Doe",
+    email: "johndoe@roketsan.com.tr",
   },
   {
-    username: "maxleiter",
-    avatar: "https://github.com/maxleiter.png",
-    email: "user2@example.com",
+    username: "Jane Smith",
+    email: "janesmith@roketsan.com.tr",
   },
   {
-    username: "evilrabbit",
-    avatar: "https://github.com/evilrabbit.png",
-    email: "user3@example.com",
+    username: "Bob Johnson",
+    email: "bobjohnson@roketsan.com.tr",
   },
 ]
 
@@ -45,7 +42,6 @@ export default function ItemGroupExample() {
             <Item>
               <ItemMedia>
                 <Avatar>
-                  <AvatarImage src={person.avatar} className="grayscale" />
                   <AvatarFallback>{person.username.charAt(0)}</AvatarFallback>
                 </Avatar>
               </ItemMedia>

@@ -413,7 +413,7 @@ export function buildRegistryBase(config: DesignSystemConfig) {
     cssVars: registryTheme.cssVars,
     css: {
       '@import "tw-animate-css"': {},
-      '@import "../../packages/shadcn/dist/tailwind.css"': {},
+      '@import "shadcn/tailwind.css"': {},
       "@layer base": {
         "*": { "@apply border-border outline-ring/50": {} },
         body: { "@apply bg-background text-foreground": {} },

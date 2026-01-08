@@ -23,9 +23,8 @@ import { Switch } from "@/registry/new-york-v4/ui/switch"
 // This is sample data
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "John Doe",
+    email: "johndoe@roketsan.com.tr",
   },
   navMain: [
     {
@@ -62,7 +61,7 @@ const data = {
   mails: [
     {
       name: "William Smith",
-      email: "williamsmith@example.com",
+      email: "williamsmith@roketsan.com.tr",
       subject: "Meeting Tomorrow",
       date: "09:34 AM",
       teaser:
@@ -70,7 +69,7 @@ const data = {
     },
     {
       name: "Alice Smith",
-      email: "alicesmith@example.com",
+      email: "alicesmith@roketsan.com.tr",
       subject: "Re: Project Update",
       date: "Yesterday",
       teaser:
@@ -78,7 +77,7 @@ const data = {
     },
     {
       name: "Bob Johnson",
-      email: "bobjohnson@example.com",
+      email: "bobjohnson@roketsan.com.tr",
       subject: "Weekend Plans",
       date: "2 days ago",
       teaser:
@@ -86,7 +85,7 @@ const data = {
     },
     {
       name: "Emily Davis",
-      email: "emilydavis@example.com",
+      email: "emilydavis@roketsan.com.tr",
       subject: "Re: Question about Budget",
       date: "2 days ago",
       teaser:
@@ -94,7 +93,7 @@ const data = {
     },
     {
       name: "Michael Wilson",
-      email: "michaelwilson@example.com",
+      email: "michaelwilson@roketsan.com.tr",
       subject: "Important Announcement",
       date: "1 week ago",
       teaser:
@@ -102,7 +101,7 @@ const data = {
     },
     {
       name: "Sarah Brown",
-      email: "sarahbrown@example.com",
+      email: "sarahbrown@roketsan.com.tr",
       subject: "Re: Feedback on Proposal",
       date: "1 week ago",
       teaser:
@@ -110,7 +109,7 @@ const data = {
     },
     {
       name: "David Lee",
-      email: "davidlee@example.com",
+      email: "davidlee@roketsan.com.tr",
       subject: "New Project Idea",
       date: "1 week ago",
       teaser:
@@ -118,7 +117,7 @@ const data = {
     },
     {
       name: "Olivia Wilson",
-      email: "oliviawilson@example.com",
+      email: "oliviawilson@roketsan.com.tr",
       subject: "Vacation Plans",
       date: "1 week ago",
       teaser:
@@ -126,7 +125,7 @@ const data = {
     },
     {
       name: "James Martin",
-      email: "jamesmartin@example.com",
+      email: "jamesmartin@roketsan.com.tr",
       subject: "Re: Conference Registration",
       date: "1 week ago",
       teaser:
@@ -134,7 +133,7 @@ const data = {
     },
     {
       name: "Sophia White",
-      email: "sophiawhite@example.com",
+      email: "sophiawhite@roketsan.com.tr",
       subject: "Team Dinner",
       date: "1 week ago",
       teaser:
