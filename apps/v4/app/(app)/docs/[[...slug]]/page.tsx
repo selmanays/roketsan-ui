@@ -19,7 +19,7 @@ import { Button } from "@/registry/new-york-v4/ui/button"
 
 export const revalidate = false
 export const dynamic = "force-static"
-export const dynamicParams = false
+export const dynamicParams = true
 
 export function generateStaticParams() {
   return source.generateParams()
