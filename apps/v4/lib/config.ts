@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "shadcn/ui",
+  name: "Roketsan UI",
   url: "https://ui.shadcn.com",
   ogImage: "https://ui.shadcn.com/og.jpg",
   description:
-    "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.",
+    "A comprehensive enterprise component library designed for building consistent, accessible, and maintainable user interfaces.",
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn-ui/ui",
+    twitter: "",
+    github: "",
   },
   navItems: [
     {
@@ -24,14 +24,6 @@ export const siteConfig = {
     {
       href: "/charts/area",
       label: "Charts",
-    },
-    {
-      href: "/docs/directory",
-      label: "Directory",
-    },
-    {
-      href: "/create",
-      label: "Create",
     },
   ],
 }

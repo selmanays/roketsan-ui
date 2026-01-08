@@ -1,47 +1,47 @@
 ---
 title: Introduction
-description: shadcn/ui is a set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks and AI models. Open Source. Open Code.
+description: Roketsan UI is a comprehensive enterprise design system providing consistent, accessible, and maintainable user interface components.
 ---
 
-**This is not a component library. It is how you build your component library.**
+**Roketsan UI is a complete design system developed by OBSS for Roketsan.**
 
-You know how most traditional component libraries work: you install a package from NPM, import the components, and use them in your app.
+Traditional component libraries require you to install packages from NPM and import components into your application.
 
-This approach works well until you need to customize a component to fit your design system or require one that isn’t included in the library. **Often, you end up wrapping library components, writing workarounds to override styles, or mixing components from different libraries with incompatible APIs.**
+This approach works well until you need to customize a component to match Roketsan UI requirements or require functionality that isn't included in the library. **Often, this leads to wrapping library components, writing workarounds to override styles, or mixing components from different libraries with incompatible APIs.**
 
-This is what shadcn/ui aims to solve. It is built around the following principles:
+Roketsan UI addresses these challenges through the following principles:
 
-- **Open Code:** The top layer of your component code is open for modification.
-- **Composition:** Every component uses a common, composable interface, making them predictable.
-- **Distribution:** A flat-file schema and command-line tool make it easy to distribute components.
-- **Beautiful Defaults:** Carefully chosen default styles, so you get great design out-of-the-box.
-- **AI-Ready:** Open code for LLMs to read, understand, and improve.
+- **Source Code Access:** Component source code is provided directly, enabling full customization and extension.
+- **Composition:** Every component uses a common, composable interface, ensuring predictable behavior.
+- **Distribution:** A structured schema and command-line tool facilitate component distribution across projects.
+- **Professional Defaults:** Carefully designed default styles provide excellent design out-of-the-box.
+- **Enterprise-Ready:** Components are designed for enterprise applications with consistent APIs and maintainable code.
 
-## Open Code
+## Source Code Access
 
-shadcn/ui hands you the actual component code. You have full control to customize and extend the components to your needs. This means:
+Roketsan UI provides direct access to component source code, giving you complete control to customize and extend components according to your requirements. This approach offers:
 
-- **Full Transparency:** You see exactly how each component is built.
-- **Easy Customization:** Modify any part of a component to fit your design and functionality requirements.
-- **AI Integration:** Access to the code makes it straightforward for LLMs to read, understand, and even improve your components.
+- **Full Transparency:** Complete visibility into component implementation and structure.
+- **Easy Customization:** Modify any aspect of a component to meet your design and functionality requirements.
+- **Maintainability:** Direct code access enables easier maintenance and integration with your existing codebase.
 
-_In a typical library, if you need to change a button’s behavior, you have to override styles or wrap the component. With shadcn/ui, you simply edit the button code directly._
+_In traditional libraries, modifying a button's behavior requires overriding styles or wrapping the component. With Roketsan UI, you can directly edit the component source code._
 
 <Accordion collapsible>
   <AccordionItem value="faq-1" className="border-none">
     <AccordionTrigger>
-      How do I pull upstream updates in an Open Code approach?
+      How do I manage updates with source code access?
     </AccordionTrigger>
     <AccordionContent>
       <p>
-        shadcn/ui follows a headless component architecture. This means the core
-        of your app can receive fixes by updating your dependencies, for
-        instance, radix-ui or input-otp.
+        Roketsan UI follows a headless component architecture. This means the core
+        functionality of your application can receive updates by updating your dependencies, such as
+        radix-ui or input-otp.
       </p>
       <p className="mt-4">
-        The topmost layer, i.e., the one closest to your design system, is not
-        coupled with the implementation of the library. It stays open for
-        modification.
+        The presentation layer, which is closest to Roketsan UI, is not
+        tightly coupled with the underlying library implementation. This allows for
+        independent modification and customization.
       </p>
     </AccordionContent>
   </AccordionItem>
@@ -49,29 +49,29 @@ _In a typical library, if you need to change a button’s behavior, you have to 
 
 ## Composition
 
-Every component in shadcn/ui shares a common, composable interface. **If a component does not exist, we bring it in, make it composable, and adjust its style to match and work with the rest of the design system.**
+Every component in Roketsan UI shares a common, composable interface. **If a component does not exist in the library, it can be integrated, made composable, and styled to match and work with the rest of Roketsan UI.**
 
-_A shared, composable interface means it's predictable for both your team and LLMs. You are not learning different APIs for every new component. Even for third-party ones._
+_A shared, composable interface ensures predictability for your development team. You don't need to learn different APIs for each new component, including third-party integrations._
 
 ## Distribution
 
-shadcn/ui is also a code distribution system. It defines a schema for components and a CLI to distribute them.
+Roketsan UI includes a code distribution system that defines a schema for components and provides a CLI tool for distribution.
 
-- **Schema:** A flat-file structure that defines the components, their dependencies, and properties.
+- **Schema:** A structured file format that defines components, their dependencies, and properties.
 - **CLI:** A command-line tool to distribute and install components across projects with cross-framework support.
 
-_You can use the schema to distribute your components to other projects or have AI generate completely new components based on existing schema._
+_The schema enables you to distribute your custom components to other projects within your organization and maintain consistency across applications._
 
-## Beautiful Defaults
+## Professional Defaults
 
-shadcn/ui comes with a large collection of components that have carefully chosen default styles. They are designed to look good on their own and to work well together as a consistent system:
+Roketsan UI provides a comprehensive collection of components with carefully designed default styles. They are engineered to work well individually and as part of a cohesive system:
 
-- **Good Out-of-the-Box:** Your UI has a clean and minimal look without extra work.
-- **Unified Design:** Components naturally fit with one another. Each component is built to match the others, keeping your UI consistent.
-- **Easily Customizable:** If you want to change something, it's simple to override and extend the defaults.
+- **Production-Ready:** Your UI has a professional and polished appearance without additional configuration.
+- **Unified Design:** Components are designed to work harmoniously together, maintaining visual and functional consistency across your application.
+- **Easily Customizable:** Modifications can be made by overriding and extending the default styles and behaviors.
 
-## AI-Ready
+## Enterprise Integration
 
-The design of shadcn/ui makes it easy for AI tools to work with your code. Its open code and consistent API allow AI models to read, understand, and even generate new components.
+The architecture of Roketsan UI is designed for enterprise environments. Direct source code access and consistent APIs enable seamless integration with existing development workflows and tooling.
 
-_An AI model can learn how your components work and suggest improvements or even create new components that integrate with your existing design._
+_The component structure and consistent patterns allow development teams to efficiently understand, customize, and extend components to meet specific business requirements._

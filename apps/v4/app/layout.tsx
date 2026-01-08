@@ -65,7 +65,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={fontVariables}>
+    <html 
+      lang="en" 
+      suppressHydrationWarning 
+      className={cn(
+        fontVariables,
+        "style-nova base-color-neutral theme-lime menu-accent-subtle menu-color-default"
+      )}
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -87,6 +94,9 @@ export default function RootLayout({
         className={cn(
           "group/body overscroll-none antialiased [--footer-height:calc(var(--spacing)*14)] [--header-height:calc(var(--spacing)*14)] xl:[--footer-height:calc(var(--spacing)*24)]"
         )}
+        style={{
+          "--radius": "0.625rem",
+        } as React.CSSProperties}
       >
         <ThemeProvider>
           <LayoutProvider>

@@ -1,10 +1,10 @@
 .theme-default .theme-container,
 .theme-default [data-radix-popper-content-wrapper] {
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  --chart-1: var(--primary);
+  --chart-2: oklch(0.25 0 0);
+  --chart-3: oklch(0.3 0 0);
+  --chart-4: oklch(0.35 0 0);
+  --chart-5: oklch(0.4 0 0);
 }
 
 .theme-mono .theme-container,
@@ -74,11 +74,11 @@
 
 .theme-scaled .theme-container,
 .theme-scaled [data-radix-popper-content-wrapper] {
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  --chart-1: var(--primary);
+  --chart-2: oklch(0.25 0 0);
+  --chart-3: oklch(0.3 0 0);
+  --chart-4: oklch(0.35 0 0);
+  --chart-5: oklch(0.4 0 0);
 
   @media (min-width: 1024px) {
     --radius: 0.45em;

@@ -79,7 +79,7 @@ import {
   PopoverTrigger,
 } from "@/registry/bases/base/ui/popover"
 import { Textarea } from "@/registry/bases/base/ui/textarea"
-import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
+import { IconPlaceholder } from "@/components/icon-placeholder"
 
 export default function VercelBlock() {
   return (

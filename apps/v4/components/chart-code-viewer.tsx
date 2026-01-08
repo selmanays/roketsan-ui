@@ -5,7 +5,6 @@ import { useMediaQuery } from "@/hooks/use-media-query"
 import { ChartCopyButton } from "@/components/chart-copy-button"
 import { type Chart } from "@/components/chart-display"
 import { getIconForLanguageExtension } from "@/components/icons"
-import { OpenInV0Button } from "@/components/open-in-v0-button"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
   Drawer,
@@ -65,7 +64,6 @@ export function ChartCodeViewer({
                 name={chart.name}
                 code={chart.files?.[0]?.content ?? ""}
               />
-              <OpenInV0Button name={chart.name} className="rounded-sm" />
             </div>
           </figcaption>
           <div

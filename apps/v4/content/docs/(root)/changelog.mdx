@@ -6,19 +6,19 @@ toc: false
 
 ## December 2025 - npx shadcn create
 
-From the very first commit, the goal of shadcn/ui was to make it customizable.
+Roketsan UI is designed to be highly customizable.
 
-The idea is to give you solid defaults, spacing, color tokens, animations, accessibility, and then let you take it from there. Tweak the code. Add new components. Change the colors. Build your own version.
+The idea is to give you solid defaults, spacing, color tokens, animations, accessibility, and then let you take it from there. Tweak the code. Add new components. Change the colors. Customize Roketsan UI to fit your requirements.
 
 But somewhere along the way, all apps started looking the same. I guess the defaults were a little _too_ good. My bad.
 
-Today, we're changing that: **npx shadcn create**.
+The **npx shadcn create** command enables comprehensive customization.
 
-Customize Everything. Pick your component library, icons, base color, theme, fonts and create your own version of shadcn/ui.
+Customize everything: component library, icons, base color, theme, fonts, and adapt Roketsan UI to your specific needs.
 
 We're starting with **5 new visual styles,** designed to help your UI actually feel like _your_ UI.
 
-- **Vega** – The classic shadcn/ui look.
+- **Vega** – The classic Roketsan UI look.
 - **Nova** – Reduced padding and margins for compact layouts.
 - **Maia** – Soft and rounded, with generous spacing.
 - **Lyra** – Boxy and sharp. Pairs well with mono fonts.
@@ -41,19 +41,11 @@ When you pull down components, we auto-detect your library and apply the right t
 
 Now available for Next.js, Vite, TanStack Start and v0.
 
-<Button asChild>
-  <Link href="/create" className="mt-6 no-underline!">
-    Get Started
-  </Link>
-</Button>
-
 ---
 
-## November 2025 - Registry directory
+## November 2025 - Registry Index
 
-We just published the Registry Directory: a list of code registries you can browse and pull code and components from.
-
-https://ui.shadcn.com/docs/directory
+We published a registry index: a list of code registries you can browse and pull code and components from.
 
 Built into the CLI. No config required.
 
@@ -459,7 +451,7 @@ That's it. Seven new components. Works with all your libraries. Ready for your p
 
 ## September 2025 - Registry Index
 
-We've created an index of open source registries that you can install items from.
+We've created an index of available registries that you can install items from.
 
 You can search, view and add items from the registry index without configuring the `.components.json` file.
 
@@ -471,7 +463,7 @@ npx shadcn add @ai-elements/prompt-input
 
 The full list of registries is available at [https://ui.shadcn.com/r/registries.json](https://ui.shadcn.com/r/registries.json).
 
-To add a registry to the index, submit a PR to the `shadcn/ui` repository. See the [registry index documentation](/docs/registry/registry-index) for more details.
+For information on adding registries to the index, see the [registry index documentation](/docs/registry/registry-index).
 
 ---
 
@@ -491,7 +483,7 @@ We just shipped shadcn CLI 3.0 with support for namespaced registries, advanced 
 
 ### Namespaced Registries
 
-The biggest change in 3.0 is namespaced registries. You can now install components from registries: a community registry, your company's private registry or internal registry, using the `@registry/name` format.
+The biggest change in 3.0 is namespaced registries. You can now install components from registries: public registries, your company's private registry, or internal registries, using the `@registry/name` format.
 
 This makes it easier to distribute code across teams and projects.
 
@@ -803,15 +795,15 @@ We're updating the registry schema to support more features.
 
 Define code as a flat JSON file and distribute it via the CLI.
 
-- Custom styles: bring your own design system, components & tokens
+- Custom styles: customize Roketsan UI components, styles & tokens
 - Extend, override, mix & match components from third-party registries and LLMs
 - Install themes, CSS vars, hooks, animations, and Tailwind layers & utilities
 
 ## January 2025 - Blocks
 
-We are inviting the community to contribute to the blocks library. Share your components and blocks with other developers and help build a library of high-quality, reusable components.
+The blocks library provides a collection of high-quality, reusable components for various use cases.
 
-We'd love to see all types of blocks: applications, marketing, products, and more.
+The library includes blocks for applications, dashboards, forms, and more.
 
 See the [docs](/docs/blocks) page to get started.
 
@@ -956,9 +948,9 @@ Blocks are ready-made components that you can use to build your apps. They are f
 
 We're starting with dashboard layouts and authentication pages, with plans to add more blocks in the coming weeks.
 
-### Open Source
+### Blocks Library
 
-Blocks are open source. You can find the source on GitHub. Use them in your projects, customize them and contribute back.
+Blocks are available for use in your projects. You can customize them to meet your specific requirements.
 
 <a href="/blocks">
   <Image
@@ -978,9 +970,9 @@ Blocks are open source. You can find the source on GitHub. Use them in your proj
   <span className="sr-only">View the blocks library</span>
 </a>
 
-### Request a Block
+### Block Development
 
-We're also introducing a "Request a Block" feature. If there's a specific block you'd like to see, simply create a request on GitHub and the community can upvote and build it.
+New blocks are continuously added to the library based on common use cases and requirements.
 
 <a href="/blocks">
   <Image
@@ -1099,7 +1091,7 @@ Another one by [emilkowalski](https://twitter.com/emilkowalski). The last toast 
 
 This has been one of the most requested features. You can now configure a custom Tailwind prefix and the cli will automatically prefix your utility classes when adding components.
 
-This means you can now easily add shadcn/ui components to existing projects like Docusaurus, Nextra...etc. A drop-in for your existing design system with no conflict. 🔥
+This means you can now easily add Roketsan UI components to existing projects like Docusaurus, Nextra...etc. A drop-in solution that integrates seamlessly with no conflict. 🔥
 
 ```tsx /tw-/
 <AlertDialog className="tw-grid tw-gap-4 tw-border tw-bg-background tw-shadow-lg" />

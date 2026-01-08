@@ -1,8 +1,6 @@
 import { type Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { PlusSignIcon } from "@hugeicons/core-free-icons"
-import { HugeiconsIcon } from "@hugeicons/react"
 
 import { Announcement } from "@/components/announcement"
 import { ExamplesNav } from "@/components/examples-nav"
@@ -18,9 +16,9 @@ import { Button } from "@/registry/new-york-v4/ui/button"
 
 import { RootComponents } from "./components"
 
-const title = "The Foundation for your Design System"
+const title = "Enterprise Component Library for Modern Applications"
 const description =
-  "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code."
+  "A comprehensive set of professionally designed and accessible components, developed by OBSS for Roketsan. This system provides a robust foundation for building sophisticated user interfaces."
 
 export const dynamic = "force-static"
 export const revalidate = false
@@ -57,14 +55,11 @@ export default function IndexPage() {
         <PageHeaderHeading className="max-w-4xl">{title}</PageHeaderHeading>
         <PageHeaderDescription>{description}</PageHeaderDescription>
         <PageActions>
-          <Button asChild size="sm" className="h-[31px] rounded-lg">
-            <Link href="/create">
-              <HugeiconsIcon icon={PlusSignIcon} />
-              New Project
-            </Link>
+          <Button asChild size="sm" className="rounded-lg">
+            <Link href="/docs">Get Started</Link>
           </Button>
           <Button asChild size="sm" variant="ghost" className="rounded-lg">
-            <Link href="/docs/components">View Components</Link>
+            <Link href="/docs/components">Browse Components</Link>
           </Button>
         </PageActions>
       </PageHeader>

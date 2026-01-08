@@ -1,12 +1,9 @@
 import Link from "next/link"
-import { PlusSignIcon } from "@hugeicons/core-free-icons"
-import { HugeiconsIcon } from "@hugeicons/react"
 
 import { getColors } from "@/lib/colors"
 import { siteConfig } from "@/lib/config"
 import { source } from "@/lib/source"
 import { CommandMenu } from "@/components/command-menu"
-import { GitHubLink } from "@/components/github-link"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
@@ -53,28 +50,8 @@ export function SiteHeader() {
               orientation="vertical"
               className="ml-2 hidden lg:block"
             />
-            <GitHubLink />
             <Separator orientation="vertical" className="3xl:flex hidden" />
-            <SiteConfig className="3xl:flex hidden" />
-            <Separator orientation="vertical" />
             <ModeSwitcher />
-            <Separator orientation="vertical" className="mr-2" />
-            <Button
-              asChild
-              size="sm"
-              className="hidden h-[31px] rounded-lg sm:flex"
-            >
-              <Link href="/create">
-                <HugeiconsIcon icon={PlusSignIcon} />
-                New Project
-              </Link>
-            </Button>
-            <Button asChild size="sm" className="h-[31px] rounded-lg sm:hidden">
-              <Link href="/create">
-                <HugeiconsIcon icon={PlusSignIcon} />
-                New
-              </Link>
-            </Button>
           </div>
         </div>
       </div>

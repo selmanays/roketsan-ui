@@ -22,17 +22,17 @@ const people = [
   {
     username: "shadcn",
     avatar: "https://github.com/shadcn.png",
-    email: "shadcn@vercel.com",
+    email: "user1@example.com",
   },
   {
     username: "maxleiter",
     avatar: "https://github.com/maxleiter.png",
-    email: "maxleiter@vercel.com",
+    email: "user2@example.com",
   },
   {
     username: "evilrabbit",
     avatar: "https://github.com/evilrabbit.png",
-    email: "evilrabbit@vercel.com",
+    email: "user3@example.com",
   },
 ]
 

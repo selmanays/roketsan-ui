@@ -1,9 +1,9 @@
 ---
 title: Add a Registry
-description: Open Source Registry Index
+description: Registry Index
 ---
 
-The open source registry index is a list of all the open source registries that are available to use out of the box.
+The registry index is a list of available registries that can be used with the CLI.
 
 When you run `shadcn add` or `shadcn search`, the CLI will automatically check the registry index for the registry you are looking for and add it to your `components.json` file.
 
@@ -11,13 +11,13 @@ You can see the full list at [https://ui.shadcn.com/r/registries.json](https://u
 
 ## Adding a Registry
 
-You can open an issue to add a registry to the index by filling out the [registry directory issue template](https://github.com/shadcn-ui/ui/issues/new?template=registry_directory.yml).
+To add a registry to the index, contact your system administrator or follow your organization's registry management procedures.
 
-Once you have submitted your issue, it will be validated and reviewed by the team.
+Registries will be validated and reviewed before being added to the index.
 
 ### Requirements
 
-1. The registry must be open source and publicly accessible.
+1. The registry must be publicly accessible.
 2. The registry must be a valid JSON file that conforms to the [registry schema specification](/docs/registry/registry-json).
 3. The registry is expected to be a flat registry with no nested items i.e `/registry.json` and `/component-name.json` files are expected to be in the root of the registry.
 4. The `files` array, if present, must NOT include a `content` property.

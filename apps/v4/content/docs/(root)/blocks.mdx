@@ -1,26 +1,24 @@
 ---
 title: Blocks
-description: Contribute components to the blocks library.
+description: Create and manage reusable block components for your applications.
 ---
 
-We are inviting the community to contribute to the [blocks library](/blocks). Share your components and blocks with other developers and help build a library of high-quality, reusable components.
-
-We'd love to see all types of blocks: applications, marketing, products, and more.
+Blocks are pre-built component compositions that can be used to accelerate development. The [blocks library](/blocks) provides a collection of high-quality, reusable components for various use cases including applications, dashboards, forms, and more.
 
 ## Setup your workspace
 
 <Steps>
 
-### Fork the repository
+### Initialize the project
 
 ```bash
-git clone https://github.com/shadcn-ui/ui.git
+git clone <repository-url>
 ```
 
 ### Create a new branch
 
 ```bash
-git checkout -b username/my-new-block
+git checkout -b feature/my-new-block
 ```
 
 ### Install dependencies
@@ -29,10 +27,10 @@ git checkout -b username/my-new-block
 pnpm install
 ```
 
-### Start the dev server
+### Start the development server
 
 ```bash
-pnpm www:dev
+pnpm dev
 ```
 
 </Steps>
@@ -45,13 +43,13 @@ A block can be a single component (eg. a variation of a ui component) or a compl
 
 ### Create a new block
 
-Create a new folder in the `apps/www/registry/new-york/blocks` directory. Make sure the folder is named in kebab-case and under `new-york`.
+Create a new folder in the `apps/v4/registry/new-york-v4/blocks` directory. Ensure the folder is named in kebab-case format.
 
 ```txt
 apps
-└── www
+└── v4
     └── registry
-        └── new-york
+        └── new-york-v4
             └── blocks
                 └── dashboard-01
 ```
@@ -94,16 +92,16 @@ dashboard-01
 
 To add your block to the registry, you need to add your block definition to `registry-blocks.ts`.
 
-This follows the registry schema at [https://ui.shadcn.com/schema/registry-item.json](https://ui.shadcn.com/schema/registry-item.json).
+This follows the registry schema specification for component definitions.
 
-```tsx title="apps/www/registry/registry-blocks.tsx" showLineNumbers
+```tsx title="apps/v4/registry/registry-blocks.tsx" showLineNumbers
 export const blocks = [
   // ...
   {
     name: "dashboard-01",
-    author: "shadcn (https://ui.shadcn.com)",
+    author: "Roketsan UI",
     title: "Dashboard",
-    description: "A simple dashboard with a hello world component.",
+    description: "A dashboard component with integrated data visualization.",
     type: "registry:block",
     registryDependencies: ["input", "button", "card"],
     dependencies: ["zod"],
@@ -135,7 +133,7 @@ export const blocks = [
 ]
 ```
 
-Make sure you add a name, description, type, registryDependencies, dependencies, files, and categories. We'll go over each of these in more detail in the schema docs (coming soon).
+Ensure you include the following required properties: `name`, `description`, `type`, `registryDependencies`, `dependencies`, `files`, and `categories`. Each property is documented in the registry schema specification.
 
 ### Run the build script
 
@@ -151,7 +149,7 @@ pnpm registry:build
 
 ### View your block
 
-Once the build script is finished, you can view your block at `http://localhost:3333/blocks/[CATEGORY]` or a full screen preview at `http://localhost:3333/view/styles/new-york/dashboard-01`.
+Once the build script is finished, you can view your block at `http://localhost:3000/blocks/[CATEGORY]` or a full screen preview at `http://localhost:3000/view/styles/new-york-v4/dashboard-01`.
 
 <Image
   src="/images/block-preview-light.png"
@@ -176,9 +174,9 @@ If you add more files, make sure to add them to the `files` array in the block d
 
 </Steps>
 
-## Publish your block
+## Build and test your block
 
-Once you're ready to publish your block, you can submit a pull request to the main repository.
+Once your block is complete, build and test it before deployment.
 
 <Steps>
 
@@ -188,7 +186,7 @@ Once you're ready to publish your block, you can submit a pull request to the ma
 pnpm registry:build
 ```
 
-### Capture a screenshot
+### Capture screenshots
 
 ```bash
 pnpm registry:capture
@@ -196,15 +194,15 @@ pnpm registry:capture
 
 <Callout className="mt-6">
 
-**Note:** If you've run the capture script before, you might need to delete the existing screenshots (both light and dark) at `apps/www/public/r/styles/new-york` and run the script again.
+**Note:** If you've run the capture script before, you may need to delete existing screenshots (both light and dark variants) at `apps/v4/public/r/styles/new-york-v4` and run the script again.
 
 </Callout>
 
-### Submit a pull request
+### Review and deploy
 
-Commit your changes and submit a pull request to the main repository.
+After building and testing your block, commit your changes following your organization's version control procedures.
 
-Your block will be reviewed and merged. Once merged it will be published to the website and available to be installed via the CLI.
+Your block will be reviewed according to established quality standards. Once approved, it will be published and available for installation via the CLI.
 
 </Steps>
 
@@ -214,7 +212,7 @@ The `categories` property is used to organize your block in the registry.
 
 ### Add a category
 
-If you need to add a new category, you can do so by adding it to the `registryCategories` array in `apps/www/registry/registry-categories.ts`.
+If you need to add a new category, you can do so by adding it to the `registryCategories` array in `apps/v4/registry/registry-categories.ts`.
 
 ```tsx title="apps/www/registry/registry-categories.ts" showLineNumbers
 export const registryCategories = [
@@ -229,7 +227,7 @@ export const registryCategories = [
 
 ## Guidelines
 
-Here are some guidelines to follow when contributing to the blocks library.
+Follow these guidelines when creating blocks for the component library.
 
 - The following properties are required for the block definition: `name`, `description`, `type`, `files`, and `categories`.
 - Make sure to list all registry dependencies in `registryDependencies`. A registry dependency is the name of the component in the registry eg. `input`, `button`, `card`, etc.

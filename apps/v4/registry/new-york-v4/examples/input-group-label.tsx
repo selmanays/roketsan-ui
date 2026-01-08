@@ -23,7 +23,7 @@ export default function InputGroupLabel() {
         </InputGroupAddon>
       </InputGroup>
       <InputGroup>
-        <InputGroupInput id="email-2" placeholder="shadcn@vercel.com" />
+        <InputGroupInput id="email-2" placeholder="user@example.com" />
         <InputGroupAddon align="block-start">
           <Label htmlFor="email-2" className="text-foreground">
             Email

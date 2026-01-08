@@ -10,25 +10,25 @@ const examples = [
   {
     name: "Dashboard",
     href: "/examples/dashboard",
-    code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/dashboard",
+    code: "",
     hidden: false,
   },
   {
     name: "Tasks",
     href: "/examples/tasks",
-    code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/tasks",
+    code: "",
     hidden: false,
   },
   {
     name: "Playground",
     href: "/examples/playground",
-    code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/playground",
+    code: "",
     hidden: false,
   },
   {
     name: "Authentication",
     href: "/examples/authentication",
-    code: "https://github.com/shadcn/ui/tree/main/apps/v4/app/(app)/examples/authentication",
+    code: "",
     hidden: false,
   },
 ]
