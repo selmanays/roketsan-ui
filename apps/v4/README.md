@@ -1,1 +1,3 @@
-This is a wip registry for the `shadcn` canary version. It has React 19 and Tailwind v4 components.
+Roketsan UI - Enterprise component library and design system developed by OBSS for Roketsan.
+
+Built with React 19 and Tailwind v4.
