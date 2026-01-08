@@ -122,7 +122,6 @@
 - [React 19](https://ui.shadcn.com/docs/react-19): React 19 support and migration guide.
 - [Tailwind CSS v4](https://ui.shadcn.com/docs/tailwind-v4): Tailwind CSS v4 support and setup.
 - [JavaScript](https://ui.shadcn.com/docs/javascript): Using shadcn/ui with JavaScript (no TypeScript).
-- [v0](https://ui.shadcn.com/docs/v0): Generating UI with v0 by Vercel.
 
 ## MCP Server
 
