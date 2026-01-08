@@ -9,6 +9,13 @@ const nextConfig = {
   outputFileTracingIncludes: {
     "/*": ["./registry/**/*"],
   },
+  outputFileTracingExcludes: {
+    "/*": [
+      "node_modules/@swc/core*",
+      "node_modules/@next/swc-*",
+      "node_modules/next/dist/compiled/@next/swc-*",
+    ],
+  },
   images: {
     remotePatterns: [
       {
