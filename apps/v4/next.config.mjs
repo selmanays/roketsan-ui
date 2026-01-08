@@ -27,7 +27,9 @@ const nextConfig = {
   },
   experimental: {
     turbopackFileSystemCacheForDev: true,
+    optimizePackageImports: ["lucide-react", "@radix-ui/react-icons"],
   },
+  swcMinify: true,
   redirects() {
     return [
       {
