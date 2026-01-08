@@ -1,5 +1,5 @@
 {
   "buildCommand": "pnpm --filter=shadcn build && pnpm --filter=v4 build",
   "installCommand": "pnpm install",
-  "rootDirectory": "ui"
+  "rootDirectory": "apps/v4"
 }
